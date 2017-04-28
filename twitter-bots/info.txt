@@ -1,0 +1,16 @@
+	Access level	Read and write (modify app permissions)
+Consumer Key (API Key)	zeIgB6DcfJG8fDx71K1OZs0KG (manage keys and access tokens)
+Callback URL	None
+Callback URL Locked	No
+Sign in with Twitter	Yes
+App-only authentication	https://api.twitter.com/oauth2/token
+Request token URL	https://api.twitter.com/oauth/request_token
+Authorize URL	https://api.twitter.com/oauth/authorize
+Access token URL	https://api.twitter.com/oauth/access_token
+
+	Access Token	854058565719523335-ucIE8lNEOK62dDqk6z2TxI6yPAifucm
+Access Token Secret	y0Xb5ZSkuF1jrXbHRvPyQZvzL9ehwiAAv0miNbGR5Kx93
+
+Consumer Key (API Key)	zeIgB6DcfJG8fDx71K1OZs0KG
+Consumer Secret (API Secret)	TLeVm7MhBsRVXxl1cYQGZycUj7sqzDNlBkeg2BV5AxN31zBrtX
+
