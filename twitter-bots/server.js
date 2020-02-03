@@ -8,10 +8,10 @@ var fs = require('fs'),
 
 var T = new Twit(config);
 console.log('the bot is starting');
-
+/*
 var stream = T.stream('user');
 console.log('follow stream is starting...');
-
+*/
 var allTweets = 
 	['You will never be free from ideology',
 	'This garbage can is called ideology.',
@@ -36,7 +36,7 @@ var hashTags =
 
 
 
-
+/*
 stream.on('follow', followed);  //Could I change this to stream.on('follow', setTimeout(followed, 1000*30));  Would that make it wait 30s to reply?
 
 function followed(eventMsg) {
@@ -63,18 +63,20 @@ function tweetThanks(text) {
 	}
 }
 
-
+*/
 
  tweetIt();
  setInterval(tweetIt, 1000*60*140);
 function tweetIt() {
 	console.log('Tweeting interval...')
 
-	var choose = Math.floor(Math.random() * allTweets.length);
-	var chooseTag = Math.floor(Math.random() * hashTags.length);
-	var tweet = {
-		status: allTweets[choose] + ' ' + hashTags[chooseTag]
-	}
+	// var choose = Math.floor(Math.random() * allTweets.length);
+	// var chooseTag = Math.floor(Math.random() * hashTags.length);
+	var tweet = "This is me #FindMeBlake"
+	// {
+		// status: allTweets[choose] + ' ' + hashTags[chooseTag]
+
+	// }
 
 	T.post('statuses/update', tweet, tweeted);
 
@@ -82,7 +84,7 @@ function tweetIt() {
 		if (err) {
 			console.log("OHSHIT");
 		} else {
-			console.log("DONE!");
+			console.log("DONE! I tweeted" + tweet);
 		}
 	}
 }
