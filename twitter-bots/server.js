@@ -65,6 +65,7 @@ function tweetThanks(text) {
 
 */
 
+/*
  tweetIt();
  setInterval(tweetIt, 1000*60*140);
 function tweetIt() {
@@ -72,7 +73,9 @@ function tweetIt() {
 
 	// var choose = Math.floor(Math.random() * allTweets.length);
 	// var chooseTag = Math.floor(Math.random() * hashTags.length);
-	var tweet = "This is me #FindMeBlake"
+	var tweet = {
+		status: "This is me #FindMeBlake"
+	}
 	// {
 		// status: allTweets[choose] + ' ' + hashTags[chooseTag]
 
@@ -82,10 +85,11 @@ function tweetIt() {
 
 	function tweeted(err, data, response) {
 		if (err) {
-			console.log("OHSHIT");
+			console.log(err);
 		} else {
 			console.log("DONE! I tweeted" + tweet);
 		}
 	}
 }
 
+*/
